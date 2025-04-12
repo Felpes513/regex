@@ -2,7 +2,7 @@ import re
 import sys
 
 # Captura todas as linhas digitadas pelo usuário
-print("Digite o texto a ser analisado (pressione Ctrl+D para finalizar):")
+print("Digite o texto a ser analisado (pressione Ctrl + Z + Enter para finalizar):")
 texto = sys.stdin.read()
 
 # Expressões Regulares
@@ -25,3 +25,6 @@ if datas_exames and empresas_ids and studies_iuids:
         print(f"Studies IUID: {studies_iuids[i]}")
 else:
     print("\n Nenhum exame encontrado! Verifique se os dados foram inseridos corretamente.")
+
+# Visualização de resultado
+input("\nPressione Enter para sair...")
